@@ -310,6 +310,14 @@ animations {
 
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
+//
+window-rule {
+    match app-id="steam"
+    open-maximized false
+    open-focused false
+    open-floating false
+}
+
 window-rule {
     // This regular expression is intentionally made as specific as possible,
     // since this is the default config, and we want no false positives.

@@ -32,3 +32,7 @@ menu:
     - key: "f"
       desc: Firefox
       cmd: firefox
+    - key: "s"
+      desc: Signal
+      cmd: signal-desktop
+
