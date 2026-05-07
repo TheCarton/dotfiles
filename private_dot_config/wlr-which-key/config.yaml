@@ -35,4 +35,7 @@ menu:
     - key: "s"
       desc: Signal
       cmd: signal-desktop
+    - key: "w"
+      desc: WhatsApp
+      cmd: firefox --new-window https://web.whatsapp.com/ --profile ~/.mozilla/firefox/KNJ9wLHC.Profile\ 2/
 

@@ -16,4 +16,5 @@ if status is-interactive
     abbr --add edit_niri_config chezmoi edit ~/.config/niri/config.kdl
     abbr --add edit_fish_config chezmoi edit ~/.config/fish/config.fish
     abbr --add edit_kitty_config chezmoi edit ~/.config/kitty/kitty.conf
+    abbr --add edit_wlr_config chezmoi edit ~/.config/wlr-which-key/config.yaml
 end

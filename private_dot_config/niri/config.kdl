@@ -308,14 +308,16 @@ animations {
 // Find more information on the wiki:
 // https://niri-wm.github.io/niri/Configuration:-Window-Rules
 
-// Work around WezTerm's initial configure bug
-// by setting an empty default-column-width.
-//
 window-rule {
     match app-id="steam"
     open-maximized false
     open-focused false
     open-floating false
+}
+
+window-rule {
+    match app-id="signal"
+    block-out-from "screencast"
 }
 
 window-rule {
