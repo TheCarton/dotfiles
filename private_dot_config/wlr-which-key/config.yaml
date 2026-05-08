@@ -44,4 +44,7 @@ menu:
     - key: "v"
       desc: Google Voice
       cmd: firefox --new-window https://voice.google.com/u/0/messages --profile ~/.mozilla/firefox/KNJ9wLHC.Profile\ 2/
+    - key: "m"
+      desc: YouTube Music
+      cmd: firefox --new-window https://music.youtube.com/
 
