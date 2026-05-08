@@ -25,6 +25,7 @@ input {
         numlock
     }
 
+
     // Next sections include libinput settings.
     // Omitting settings disables them, or leaves them at their default values.
     // All commented-out settings here are examples, not defaults.
@@ -75,7 +76,7 @@ input {
 // Find more information on the wiki:
 // https://niri-wm.github.io/niri/Configuration:-Outputs
 // Remember to uncomment the node by removing "/-"!
-output "DP-1" {
+output {{ .primary_monitor | quote }} {
     // Uncomment this line to disable this output.
     // off
 
