@@ -29,9 +29,15 @@ margin_top: 0
 auto_kbd_layout: true
 
 menu:
-    - key: "f"
-      desc: Firefox
-      cmd: firefox --new-window --profile ~/.mozilla/firefox/ao60f781.default-1750271762038/
+  - key: "f"
+    desc: Firefox
+    cmd: firefox --new-window --profile ~/.mozilla/firefox/ao60f781.default-1750271762038/
+  - key: "m"
+    desc: YouTube Music
+    cmd: firefox --new-window https://music.youtube.com/
+  - key: "s"
+    desc: Messages
+    submenu:
     - key: "s"
       desc: Signal
       cmd: signal-desktop
@@ -44,7 +50,9 @@ menu:
     - key: "v"
       desc: Google Voice
       cmd: firefox --new-window https://voice.google.com/u/0/messages --profile ~/.mozilla/firefox/KNJ9wLHC.Profile\ 2/
-    - key: "m"
-      desc: YouTube Music
-      cmd: firefox --new-window https://music.youtube.com/
-
+  - key: "p"
+    desc: Power
+    submenu:
+     - key: "p"
+       desc: Power Off
+       cmd: shutdown now
