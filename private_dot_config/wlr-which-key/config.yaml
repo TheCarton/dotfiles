@@ -31,11 +31,17 @@ auto_kbd_layout: true
 menu:
     - key: "f"
       desc: Firefox
-      cmd: firefox
+      cmd: firefox --new-window --profile ~/.mozilla/firefox/ao60f781.default-1750271762038/
     - key: "s"
       desc: Signal
       cmd: signal-desktop
     - key: "w"
       desc: WhatsApp
       cmd: firefox --new-window https://web.whatsapp.com/ --profile ~/.mozilla/firefox/KNJ9wLHC.Profile\ 2/
+    - key: "g"
+      desc: Gmail
+      cmd: firefox --new-window https://mail.google.com/mail/u/0/#inbox --profile ~/.mozilla/firefox/KNJ9wLHC.Profile\ 2/
+    - key: "v"
+      desc: Google Voice
+      cmd: firefox --new-window https://voice.google.com/u/0/messages --profile ~/.mozilla/firefox/KNJ9wLHC.Profile\ 2/
 
