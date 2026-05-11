@@ -19,3 +19,5 @@ if status is-interactive
     abbr --add edit_wlr_config chezmoi edit ~/.config/wlr-which-key/config.yaml
     abbr --add edit_chezmoi_machine_config hx ~/.config/chezmoi/chezmoi.toml
 end
+
+set fish_greeting
