@@ -319,6 +319,12 @@ window-rule {
 }
 
 window-rule {
+    match app-id="hx_notes_term"
+    open-focused true
+    open-floating true
+}
+
+window-rule {
     match app-id="discord"
     open-maximized false
     open-focused false
@@ -388,7 +394,8 @@ binds {
     Mod+Space hotkey-overlay-title="Run an Application" { spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen" { spawn "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
 
-    Mod+N {spawn "kitty" "-e" "hx";}
+    // Mod+N {spawn "kitty" "-d" "~/Documents/notes";}
+     Mod+N {spawn "kitty" "--app-id" "hx_notes_term" "-d" "~/Documents/notes" "-e" "hx" "~/Documents/notes/omninotev2.md";}
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
