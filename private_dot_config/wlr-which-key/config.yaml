@@ -32,10 +32,10 @@ menu:
   - key: "f"
     desc: Firefox
     cmd: firefox --new-window --profile ~/.mozilla/firefox/ao60f781.default-1750271762038/
-  - key: "m"
+  - key: "y"
     desc: YouTube Music
     cmd: firefox --new-window https://music.youtube.com/
-  - key: "s"
+  - key: "m"
     desc: Messages
     submenu:
     - key: "s"
@@ -56,3 +56,6 @@ menu:
      - key: "p"
        desc: Power Off
        cmd: shutdown now
+  - key: "t"
+    desc: Task Manager
+    cmd: super-productivity
