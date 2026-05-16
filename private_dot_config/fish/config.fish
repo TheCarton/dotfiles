@@ -24,6 +24,9 @@ if status is-interactive
     abbr --add edit_kitty_config chezmoi edit ~/.config/kitty/kitty.conf
     abbr --add edit_wlr_config chezmoi edit ~/.config/wlr-which-key/config.yaml
     abbr --add edit_chezmoi_machine_config hx ~/.config/chezmoi/chezmoi.toml
+    abbr --add add_package hx -w ~/dend_nixos/modules/features/ ~/dend_nixos/modules/features/primary_env.nix +32
+    abbr --add apply_config chezmoi apply
+    abbr --add lg_dotfiles lazygit -p ~/.local/share/chezmoi/
 end
 
 set fish_greeting
