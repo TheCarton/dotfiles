@@ -10,6 +10,12 @@ if status is-interactive
         rm -f -- "$tmp"
     end
 
+    function copy-commandline
+        echo -n (commandline) | wl-copy
+    end
+
+    bind \cy copy-commandline
+
     abbr --add rebuild_flake sudo nixos-rebuild switch --flake .#desktop
 
     abbr --add lg lazygit
