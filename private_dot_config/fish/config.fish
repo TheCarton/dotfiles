@@ -27,6 +27,11 @@ if status is-interactive
     abbr --add add_package hx -w ~/dend_nixos/modules/features/ ~/dend_nixos/modules/features/primary_env.nix +32
     abbr --add apply_config chezmoi apply
     abbr --add lg_dotfiles lazygit -p ~/.local/share/chezmoi/
+    abbr --add ssh_server ssh -X admin@192.168.0.187
+    abbr --add mount_server_configuration sshfs admin@192.168.0.187:/etc/nixos/ ~/Documents/server_etc/
+    abbr --add unmount_server_configuration fusermount -u ~/Documents/server_etc
+    abbr --add mount_server_dockerfiles sshfs admin@192.168.0.187:/etc/dockerfiles/ ~/Documents/server_dockerfiles/
+    abbr --add unmount_server_dockerfiles fusermount -u ~/Documents/server_dockerfiles/
 end
 
 set fish_greeting
