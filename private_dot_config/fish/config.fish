@@ -14,6 +14,11 @@ if status is-interactive
         echo -n (commandline) | wl-copy
     end
 
+    function add_package
+        cd ~/dend_nixos/modules/features/
+        hx ~/dend_nixos/modules/features/primary_env.nix +32
+    end
+
     bind \cy copy-commandline
 
     abbr --add rebuild_flake sudo nixos-rebuild switch --flake .#desktop
@@ -24,7 +29,6 @@ if status is-interactive
     abbr --add edit_kitty_config chezmoi edit ~/.config/kitty/kitty.conf
     abbr --add edit_wlr_config chezmoi edit ~/.config/wlr-which-key/config.yaml
     abbr --add edit_chezmoi_machine_config hx ~/.config/chezmoi/chezmoi.toml
-    abbr --add add_package hx -w ~/dend_nixos/modules/features/ ~/dend_nixos/modules/features/primary_env.nix +32
     abbr --add apply_config chezmoi apply
     abbr --add lg_dotfiles lazygit -p ~/.local/share/chezmoi/
     abbr --add ssh_server ssh -X admin@192.168.0.187
