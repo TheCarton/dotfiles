@@ -34,7 +34,7 @@ menu:
     cmd: firefox --new-window
   - key: "y"
     desc: YouTube Music
-    cmd: firefox --new-window https://music.youtube.com/
+    cmd: ytmdesktop
   - key: "m"
     desc: Messages
     submenu:

@@ -321,6 +321,14 @@ window-rule {
 }
 
 window-rule {
+    match app-id="youtube-music-desktop-app"
+    open-maximized false
+    open-focused false
+    open-floating false
+    open-on-output {{ .secondary_monitor | quote }}
+}
+
+window-rule {
     match app-id="hx_notes_term"
     open-focused true
     open-floating true
