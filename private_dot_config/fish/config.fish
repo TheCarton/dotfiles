@@ -19,6 +19,21 @@ if status is-interactive
         hx ~/dend_nixos/modules/features/primary_env.nix +32
     end
 
+    function sshfs_mount
+        sshfs admin@192.168.0.187:/etc/nixos/ /home/luke/Documents/server_etc/ -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3
+        sshfs admin@192.168.0.187:/etc/dockerfiles/ ~/Documents/server_dockerfiles/ -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3
+    end
+
+    function sshfs_unmount
+        fusermount -u ~/Documents/server_etc
+        fusermount -u ~/Documents/server_dockerfiles/
+    end
+
+    function sshfs_clean
+        fusermount -uz /home/luke/Documents/remote_server_etc
+        fusermount -uz /home/luke/Documents/remote_dockerfiles
+    end
+
     bind \cy copy-commandline
 
     abbr --add rebuild_flake sudo nixos-rebuild switch --flake .#desktop
@@ -32,10 +47,5 @@ if status is-interactive
     abbr --add apply_config chezmoi apply
     abbr --add lg_dotfiles lazygit -p ~/.local/share/chezmoi/
     abbr --add ssh_server ssh -X admin@192.168.0.187
-    abbr --add mount_server_configuration sshfs admin@192.168.0.187:/etc/nixos/ ~/Documents/server_etc/
-    abbr --add unmount_server_configuration fusermount -u ~/Documents/server_etc
-    abbr --add mount_server_dockerfiles sshfs admin@192.168.0.187:/etc/dockerfiles/ ~/Documents/server_dockerfiles/
-    abbr --add unmount_server_dockerfiles fusermount -u ~/Documents/server_dockerfiles/
 end
-
 set fish_greeting
