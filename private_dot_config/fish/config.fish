@@ -47,5 +47,6 @@ if status is-interactive
     abbr --add apply_config chezmoi apply
     abbr --add lg_dotfiles lazygit -p ~/.local/share/chezmoi/
     abbr --add ssh_server ssh -X admin@192.168.0.187
+    abbr --add dumb echo noyou
 end
 set fish_greeting
