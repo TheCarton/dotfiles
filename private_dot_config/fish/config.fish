@@ -49,3 +49,4 @@ if status is-interactive
     abbr --add ssh_server ssh -X admin@192.168.0.187
 end
 set fish_greeting
+# why
