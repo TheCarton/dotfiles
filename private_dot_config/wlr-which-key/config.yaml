@@ -43,13 +43,13 @@ menu:
       cmd: signal-desktop
     - key: "w"
       desc: WhatsApp
-      cmd: firefox --new-window --new-window https://web.whatsapp.com/
+      cmd: firefox --new-window https://web.whatsapp.com/
     - key: "g"
       desc: Gmail
-      cmd: firefox --new-window --new-window https://mail.google.com/mail/u/0/#inbox
+      cmd: firefox --new-window https://mail.google.com/mail/u/0/#inbox
     - key: "v"
       desc: Google Voice
-      cmd: firefox --new-window --new-window https://voice.google.com/u/0/messages
+      cmd: firefox --new-window https://voice.google.com/u/0/messages
   - key: "p"
     desc: Power
     submenu:
