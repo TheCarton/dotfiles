@@ -20,18 +20,18 @@ if status is-interactive
     end
 
     function sshfs_mount
-        sshfs admin@192.168.0.187:/etc/nixos/ /home/luke/Documents/server_etc/ -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3
-        sshfs admin@192.168.0.187:/etc/dockerfiles/ ~/Documents/server_dockerfiles/ -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3
+        sshfs admin@192.168.0.187:/etc/nixos/ /home/luke/server_etc/ -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3
+        sshfs admin@192.168.0.187:/etc/dockerfiles/ ~/server_dockerfiles/ -o reconnect,ServerAliveInterval=15,ServerAliveCountMax=3
     end
 
     function sshfs_unmount
-        fusermount -u ~/Documents/server_etc
-        fusermount -u ~/Documents/server_dockerfiles/
+        fusermount -u ~/server_etc
+        fusermount -u ~/server_dockerfiles/
     end
 
     function sshfs_clean
-        fusermount -uz /home/luke/Documents/remote_server_etc
-        fusermount -uz /home/luke/Documents/remote_dockerfiles
+        fusermount -uz /home/luke/remote_server_etc
+        fusermount -uz /home/luke/remote_dockerfiles
     end
 
     bind \cy copy-commandline
