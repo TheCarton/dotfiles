@@ -32,11 +32,11 @@ menu:
   - key: "f"
     desc: Firefox
     cmd: firefox --new-window
-  - key: "y"
-    desc: YouTube Music
-    cmd: firefox --new-window https://music.youtube.com/
+  - key: "k"
+    desc: KeePassXC
+    cmd: keepassxc
   - key: "m"
-    desc: Messages
+    desc: Messages and misc
     submenu:
     - key: "s"
       desc: Signal
@@ -50,6 +50,9 @@ menu:
     - key: "v"
       desc: Google Voice
       cmd: firefox --new-window https://voice.google.com/u/0/messages
+    - key: "y"
+      desc: YouTube Music
+      cmd: firefox --new-window https://music.youtube.com/
   - key: "p"
     desc: Power
     submenu:
