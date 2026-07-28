@@ -59,6 +59,6 @@ menu:
      - key: "p"
        desc: Power Off
        cmd: shutdown now
-  - key: "t"
-    desc: Tasks 
-    cmd: super-productivity
+  # - key: "t"
+  #   desc: Tasks 
+  #   cmd: super-productivity
