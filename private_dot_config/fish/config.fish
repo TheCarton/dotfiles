@@ -36,8 +36,7 @@ if status is-interactive
 
     bind \cy copy-commandline
 
-    abbr --add desktop_rebuild sudo nixos-rebuild switch --flake .#desktop
-    abbr --add laptop_rebuild sudo nixos-rebuild switch --flake .#laptop
+    abbr --add flake_rebuild sudo nixos-rebuild switch --flake .
 
     abbr --add lg lazygit
     abbr --add edit_niri_config chezmoi edit ~/.config/niri/config.kdl
