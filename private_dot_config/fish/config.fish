@@ -30,8 +30,8 @@ if status is-interactive
     end
 
     function sshfs_clean
-        fusermount -uz /home/luke/remote_server_etc
-        fusermount -uz /home/luke/remote_dockerfiles
+        fusermount -uz /home/luke/server_etc
+        fusermount -uz /home/luke/server_dockerfiles
     end
 
     bind \cy copy-commandline
