@@ -46,7 +46,7 @@ if status is-interactive
     abbr --add edit_chezmoi_machine_config hx ~/.config/chezmoi/chezmoi.toml
     abbr --add apply_config chezmoi apply
     abbr --add lg_dotfiles lazygit -p ~/.local/share/chezmoi/
-    abbr --add ssh_server ssh -X admin@192.168.0.187
+    abbr --add ssh_server kitten ssh admin@192.168.0.187
 end
 set fish_greeting
 # why
