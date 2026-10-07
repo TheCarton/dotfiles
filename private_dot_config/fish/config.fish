@@ -33,6 +33,9 @@ if status is-interactive
         fusermount -uz /home/luke/server_etc
         fusermount -uz /home/luke/server_dockerfiles
     end
+    function ssh_deploy_hugo
+        ssh admin@192.168.0.187 "cd /home/admin/Documents/parvaaz_website/ && hugo --minify --cleanDestinationDir -d /var/www/parvaaz/"
+    end
 
     bind \cy copy-commandline
 
@@ -47,6 +50,8 @@ if status is-interactive
     abbr --add apply_config chezmoi apply
     abbr --add lg_dotfiles lazygit -p ~/.local/share/chezmoi/
     abbr --add ssh_server kitten ssh admin@192.168.0.187
+    abbr --add nh_clean nh clean all --keep 3
+
 end
 set fish_greeting
 # why
