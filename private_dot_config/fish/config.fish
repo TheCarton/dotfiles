@@ -36,7 +36,9 @@ if status is-interactive
     function ssh_deploy_hugo
         ssh admin@192.168.0.187 "cd /home/admin/Documents/parvaaz_website/ && hugo --minify --cleanDestinationDir -d /var/www/parvaaz/"
     end
-
+    function ssh_update_docker
+        ssh admin@192.168.0.187 "cd /etc/dockerfiles && docker-compose pull && docker-compose up -d"
+    end
     bind \cy copy-commandline
 
     abbr --add flake_rebuild sudo nixos-rebuild switch --flake .
