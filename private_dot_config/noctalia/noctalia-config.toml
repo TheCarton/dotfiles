@@ -86,6 +86,11 @@ wallpaper_scheme = "m3-content"
     builtin_ids = [ "helix", "kitty" ]
     community_ids = [ "pywalfox" ]
 
+
+[shell.animation]
+enabled = true
+speed   = 2.0   # 1.0 = normal, 0.5 = 2× slower, 2.0 = 2× faster
+
 [wallpaper.default]
 path = "/nix/store/7xnm0ac94ykcxl0qq7jbyipiyx0xz5wr-noctalia-5.3.0/share/noctalia/assets/noctalia-wallpaper.png"
 
